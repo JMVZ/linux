@@ -50,7 +50,7 @@ static void try_to_suspend(struct work_struct *work)
 	mutex_unlock(&autosleep_lock);
 
 	if (!pm_get_wakeup_count(&final_count, false))
-		goto out;
+		
 
 	/*
 	 * If the wakeup occurred for an unknown reason, wait to prevent the
